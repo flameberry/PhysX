@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<preset name="mac64" comment="Mac PhysX general settings">
-  <platform targetPlatform="mac64" compiler="default" />
+<preset name="mac64-xcode" comment="Mac Xcode PhysX general settings">
+  <platform targetPlatform="mac64" compiler="xcode" />
   <CMakeSwitches>
     <cmakeSwitch name="PX_GENERATE_STATIC_LIBRARIES" value="True" comment="Generate static libraries" />
     <cmakeSwitch name="NV_FORCE_64BIT_SUFFIX" value="True" comment="Force a 64 bit suffix for platforms that don't register properly." />

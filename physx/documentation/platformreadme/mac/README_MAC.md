@@ -8,7 +8,7 @@
 
 * CMake, minimum version 3.20
 * Python, minimum version 3.5
-* XCode, minimum version 12
+* XCode Or Command Line Tools, minimum version 12
 
 ### Notes
 * Packman script uses 'realpath' command. It can be installed via homebrew by running the command 'brew install coreutils'.

@@ -123,6 +123,8 @@ class CMakePreset:
             return False
         elif self.targetPlatform == 'android':
             return False
+        elif 'mac' in self.targetPlatform and self.compiler == 'default':
+            return False
         return True
 
     def getCMakeSwitches(self):
@@ -162,6 +164,8 @@ class CMakePreset:
             outString = outString + '-G \"Visual Studio 16 2019\"'
         elif self.compiler == 'xcode':
             outString = outString + '-G Xcode'
+        elif 'mac' in self.targetPlatform and self.compiler == 'default':
+            outString = outString + '-G \"Unix Makefiles\"'
         elif self.targetPlatform == 'android':
             outString = outString + '-G \"MinGW Makefiles\"'
         elif self.targetPlatform == 'linux':
